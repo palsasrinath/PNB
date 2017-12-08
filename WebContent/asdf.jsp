@@ -47,7 +47,7 @@ window.location.href = "login.jsp";
  <form:form id="changeAdminPassword" name="changeAdminPassword" action="changeAdminPassword.htm" method="post" class="form-signin" role="form" >
   <div class="page-header"><h2>Change password</h2></div>
   <div class="form-group">
-              <input type="password" name="oldPassword" id="oldPassword" path="oldPassword"  class="form-control mand" placeholder="Old password" required="autofocus"/>
+              <input type="password" name="oldPassword1" id="oldPassword1" path="oldPassword1"  class="form-control mand" placeholder="Old password" required="autofocus"/>
             </div>
             <div class="form-group">
             	 <form:input name="newPassword"  id="newPassword" path="newPassword" type="password" class="form-control mand" placeholder="New Password" required="autofocus"/>

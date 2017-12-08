@@ -130,7 +130,7 @@
 	    	<input type="hidden" name="pageChecker" value="fromWebPage" id="pageChecker"/>
 			
             
-           		<form:input type="text" name="email" value="" id="email" path="email" class="form-control mand" placeholder="Email address" required="autofocus"/>
+           		<form:input type="text" name="email1" value="" id="email1" path="email1" class="form-control mand" placeholder="Email address" required="autofocus"/>
 				<form:input type="password"  name="password"  id="password" path="password" class="form-control disable mand" required="autofocus" placeholder="Password"/>
 				
 				<!-- <input type="submit" value="Sign In" name="Create"
@@ -157,7 +157,7 @@
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-md-12 footer text-center"><h4>Copyright © 2017   Money Bank All Rights Reserved. Website Developed by <code> Mktechnosoft</code></h4>
+<div class="col-md-12 footer text-center"><h4>Copyright Â© 2017   Money Bank All Rights Reserved. Website Developed by <code> Mktechnosoft</code></h4>
 </div>
 </div>
 </div><!--end-container fluid-->
