@@ -1,0 +1,10 @@
+.reg{
+margin-top:150px;
+}
+.reg h4{
+color:blue;
+}
+.reg h4:hover{
+cursor:pointer;
+color:green;
+}

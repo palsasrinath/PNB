@@ -1,0 +1,15 @@
+/*------------ Rajesh CSS ------------------ */
+.jbanking_row{overflow:hidden;margin-right:0;}
+.jbanking{background-color:white;color:orange;margin-right:-316px;transition: margin-right 0.2s linear;border-radius:6px;}
+.jbanking:hover{margin-right:0px; }
+.active{color:#f5821f;}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #f5821f;
+}
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #f5821f;
+}

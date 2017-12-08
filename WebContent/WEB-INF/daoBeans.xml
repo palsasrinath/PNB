@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+	
+	
+	<!-- Enable Annotation based Declarative Transaction Management -->
+	<tx:annotation-driven proxy-target-class="true"
+		transaction-manager="transactionManager" />
+
+	<!-- Creating TransactionManager Bean, since JDBC we are creating of type 
+		DataSourceTransactionManager -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="adminDAO" class="com.mankraft.bankapp.jdbc.dao.AdminDAOImpl">
+		<property name="dataSource" ref="dataSource"></property>
+		 <property name="jdbcTemplate"  ref="jdbcTemplate" /> 
+	</bean>
+	
+	<bean id="adminService" class="com.mankraft.bankapp.jdbc.service.AdminServiceImpl">
+		<property name="adminDAO" ref="adminDAO"></property>
+	</bean>
+	
+	<bean id="custmerDAO" class="com.mankraft.bankapp.jdbc.dao.CustomerDAOImpl">
+		<property name="dataSource" ref="dataSource"></property>
+		 <property name="jdbcTemplate"  ref="jdbcTemplate" /> 
+	</bean>
+	
+	<bean id="customerService" class="com.mankraft.bankapp.jdbc.service.CustomerServiceImpl">
+		<property name="customerDAO" ref="custmerDAO"></property>
+	</bean>
+	
+</beans>

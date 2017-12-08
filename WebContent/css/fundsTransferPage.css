@@ -1,0 +1,87 @@
+*{padding:0px;margin:0px;}
+.img{
+	height:100px;
+}
+.logo{
+	height:100px;
+	width:100%;
+}
+
+.list-1{
+	height:100px;
+	margin-top:15px;
+}
+.list-2{
+	margin-left:30px;
+	font-size:14px;
+}
+.lock{
+	color:orange;
+	font-size:20px;
+}
+.button{
+	color:white;
+}
+.card{
+	font-size:25px;
+}
+.profile{
+	padding-bottom:10px;
+}
+.user{
+	font-size:30px;
+}
+.time{
+	padding-top:10px;
+}
+.empty{
+	height:250px;
+}
+.logout{
+	height:30px;
+	width:80px;
+}
+.balance{
+	height:250px;
+	border:1px solid gray;
+	margin-left:20px;
+}
+.balance1{
+	height:250px;
+	border:1px solid gray;
+	margin-left:20px;
+}
+.space{
+	height:20px;
+}
+.graph{
+	color:orange;
+}
+.color{
+	height:20px;
+}
+.line{
+	border-bottem:1px solid black;
+}
+.line{
+	height:20px;
+	background:#f2e5ff;
+}
+
+/* jEdit*/
+/* jEdit*/
+.list{}
+.list-li{cursor:pointer;display:inline-block;}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+/* /jEdit*/
